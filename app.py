@@ -1,4 +1,13 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="MyVault",
+    page_icon="🔐",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    page_icon = ":coin:"
+)
+
 from auth.auth import login, register, logout
 from options.dashboard import dashboard
 from options.deadlines import deadlines
@@ -26,7 +35,7 @@ if "login_data" not in st.session_state:
 
 # Main function for the app
 def main():
-    st.set_page_config(page_title="MyVault", layout="wide", initial_sidebar_state="expanded", page_icon = ":coin:")
+    # st.set_page_config(page_title="MyVault", layout="wide", initial_sidebar_state="expanded", page_icon = ":coin:")
     if not st.session_state.logged_in:
         option = st.sidebar.selectbox("Choose", ["Register", "Login"])
         if option == "Register":
@@ -56,3 +65,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
