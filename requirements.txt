@@ -15,7 +15,7 @@ click==8.1.7
 colorama==0.4.6
 cryptography==43.0.1
 Cython==3.0.11
-deepface==0.0.93
+deepface==0.0.79
 dnspython==2.6.1
 entrypoints==0.4
 extra-streamlit-components==0.1.71
@@ -32,6 +32,7 @@ google-pasta==0.2.0
 grpcio==1.66.1
 gunicorn==23.0.0
 h5py==3.12.1
+huggingface_hub==0.17.3
 idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.4
@@ -104,4 +105,5 @@ Werkzeug==3.0.4
 wheel==0.44.0
 wrapt==1.16.0
 plotly
+
 
