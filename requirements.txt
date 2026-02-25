@@ -24,6 +24,7 @@ fire==0.6.0
 Flask==3.0.3
 Flask-Cors==5.0.0
 flatbuffers==24.3.25
+gast
 gdown==5.2.0
 gitdb==4.0.11
 GitPython==3.1.43
@@ -47,7 +48,7 @@ ml-dtypes==0.4.1
 mtcnn==0.1.1
 namex==0.0.8
 narwhals==1.8.3
-numpy==1.26.4
+numpy
 opencv-python==4.10.0.84
 opt-einsum==3.3.0
 optree==0.12.1
@@ -104,6 +105,7 @@ Werkzeug==3.0.4
 wheel==0.44.0
 wrapt==1.16.0
 plotly
+
 
 
 
