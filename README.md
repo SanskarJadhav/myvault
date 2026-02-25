@@ -1,4 +1,4 @@
-# AIBF CA2 AI in FinTech App: MyVault
+AI in FinTech App: MyVault
 
 ### Overview 👀
 MyVault is a biometric authentication system deployed on a cloud hosted Streamlit website, utilizing both facial and voice recognition. It ensures secure access to a personalized dashboard where users can track financial transactions and manage payment deadlines. All sensitive data is encrypted using unique randomized keys to ensure further security.
