@@ -22,6 +22,6 @@ MyVault is a biometric authentication system deployed on a cloud hosted Streamli
 - **Encryption**: All uploaded biometric and financial data are encrypted as cyphers to ensure the highest level of security and data privacy.
 
 ### Deployment 🌐 
-This project is privately hosted on Streamlit (can be made public) and requires no local installation for use.
+This project is hosted on Streamlit and requires no local installation for use.
 
 Click here to visit the website: [MyVault](https://myvault.streamlit.app/).
