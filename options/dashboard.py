@@ -46,7 +46,7 @@ def dashboard(username):
         if len(bank_transactions) > 0:
             credit = sum(bank_transactions[bank_transactions["Type"] == "Credit"]["Amount"])
             debit =  sum(bank_transactions[bank_transactions["Type"] == "Debit"]["Amount"])
-        bank_data.loc[len(bank_data)] = [bank["bank_name"], f"{float(bank["starting_amount"] + credit - debit):.2f}", len(bank_transactions), credit, debit]
+        bank_data.loc[len(bank_data)] = [bank["bank_name"], f"{float(bank['starting_amount'] + credit - debit):.2f}", len(bank_transactions), credit, debit]
 
     st.table(bank_data[["Bank","Balance","No of Transactions"]])
     exp = st.expander("Add New Bank")
@@ -64,3 +64,4 @@ def dashboard(username):
     st.plotly_chart(fig)
     fig = px.bar(bank_data, x = "Bank", y=["Credit","Debit"], barmode="group", title = "Credit and Debit for Each Bank")
     st.plotly_chart(fig)
+
