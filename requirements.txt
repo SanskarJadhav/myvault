@@ -85,9 +85,9 @@ streamlit==1.38.0
 streamlit-authenticator==0.3.3
 streamlit-mic-recorder==0.0.8
 tenacity==8.5.0
-tensorboard==2.17.1
+tensorboard==2.12.1
 tensorboard-data-server==0.7.2
-tensorflow==2.17.0
+tensorflow==2.12.0
 tensorflow-io==0.37.1
 termcolor==2.4.0
 tf_keras==2.17.0
@@ -105,6 +105,7 @@ Werkzeug==3.0.4
 wheel==0.44.0
 wrapt==1.16.0
 plotly
+
 
 
 
