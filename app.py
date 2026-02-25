@@ -4,8 +4,7 @@ st.set_page_config(
     page_title="MyVault",
     page_icon="🔐",
     layout="wide",
-    initial_sidebar_state="expanded",
-    page_icon = ":coin:"
+    initial_sidebar_state="expanded"
 )
 
 from auth.auth import login, register, logout
@@ -65,4 +64,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
