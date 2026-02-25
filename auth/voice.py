@@ -13,7 +13,14 @@ import tempfile
 import shutil
 import soundfile as sf
 
-speaker_model = SpeakerRecognition.from_hparams(source="speechbrain/spkrec-ecapa-voxceleb", savedir="tmp")
+# speaker_model = SpeakerRecognition.from_hparams(source="speechbrain/spkrec-ecapa-voxceleb", savedir="tmp")
+@st.cache_resource
+def load_speaker_model():
+    return SpeakerRecognition.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb"
+    )
+
+speaker_model = load_speaker_model()
 
 decrypted_voice_sample_rate = 90000
 
@@ -71,3 +78,4 @@ def voice_login(audio):
         st.rerun()
     else:
         st.error("Voice match failed. Please try again.")
+
